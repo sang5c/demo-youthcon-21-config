@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-app
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: hello-app
+  template:
+    metadata:
+      labels:
+        app: hello-app
+    spec:
+      containers:
+#       - image: gcr.io/heptio-images/ks-guestbook-demo:0.2
+      - image: youthconpso/hello
+        name: hello-app
+        ports:
+        - containerPort: 8080
