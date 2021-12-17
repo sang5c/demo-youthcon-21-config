@@ -14,7 +14,6 @@ spec:
         app: hello-app
     spec:
       containers:
-#       - image: gcr.io/heptio-images/ks-guestbook-demo:0.2
       - image: youthconpso/hello
         name: hello-app
         ports:
