@@ -6,4 +6,4 @@ resources:
 images:
 - name: youthconpso/hello
   newName: youthconpso/hello
-  newTag: 9d63
+  newTag: 70f1a5
