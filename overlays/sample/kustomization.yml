@@ -6,4 +6,4 @@ resources:
 images:
 - name: youthconpso/hello
   newName: youthconpso/hello
-  newTag: "1595311127"
+  newTag: "1595322015"
