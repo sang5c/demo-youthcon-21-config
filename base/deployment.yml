@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: hello-app
 spec:
-  replicas: 1
+  replicas: 2
   revisionHistoryLimit: 3
   selector:
     matchLabels:
@@ -14,7 +14,7 @@ spec:
         app: hello-app
     spec:
       containers:
-      - image: youthconpso/hello
+      - image: youthconpso/hello # 본인의 dockerhub 경로로 수정
         name: hello-app
         ports:
         - containerPort: 8080
